@@ -1,0 +1,32 @@
+.form{
+  margin-top: 67px;
+  &-group{
+    margin-top: 55px;
+  }
+}
+
+label{
+  color:#4E5166;
+  font: 16px bold;
+  margin-left: 20px;
+}
+input{
+  width: 436px;
+  height: 40px;
+  border: 1px solid #4E5166;
+  border-radius: 20px;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  margin-top: 87px;
+  &-valider{
+    width: 185px;
+    height: 67px;
+    color: #FFFFFF;
+    font: 24px bold;
+    background-color: #FD2D01;
+    border: 3px solid #FD2D01;
+    border-radius: 37px;
+  }
+}

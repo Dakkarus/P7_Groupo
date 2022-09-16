@@ -1,0 +1,27 @@
+<nav class="nav">
+  <div class="left-nav">
+    <ul>
+      <li>
+        <a routerLink="postes" routerLinkActive="active" *ngIf="isAuth$ | async">
+          Acceuil
+        </a>
+      </li>
+      <li>
+        <a routerLink="new-poste" routerLinkActive="active" *ngIf="isAuth$ | async">
+          Nouveau post
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="logo">
+    <div class="logo-image">
+      <img alt="Groupomania Logo" src="../../assets/images/icon-groupo.png">
+    </div>
+  </div>
+  <div>
+    <a (click)="onLogout()" *ngIf="isAuth$ | async">
+      Déconnexion
+   </a>
+  </div>
+  
+</nav>

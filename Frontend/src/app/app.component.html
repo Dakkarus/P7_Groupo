@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="container">
+  <router-outlet>
+    <div class="nav">
+      <a class="nav_signup" routerLink="signup" routerLinkActive="active" *ngIf="!(isAuth$ | async)">
+        S'inscrire
+      </a>
+      <a class="nav_login" routerLink="login" routerLinkActive="active" *ngIf="!(isAuth$ | async)">
+        Se Connecter
+      </a>
+    </div>
+  </router-outlet>
+</div>
