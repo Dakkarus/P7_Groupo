@@ -1,20 +1,32 @@
 .form{
+  display: flex;
+  flex-direction: column;
   margin-top: 67px;
   &-group{
-    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
   }
+&-padding{
+  margin-top: 0;
+}
 }
 
 label{
   color:#4E5166;
-  font: 16px bold;
-  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 125px;
+  font-family: inherit;
 }
 input{
   width: 436px;
   height: 40px;
+  margin-left: 105px;
+  margin-right: 105px;
   border: 1px solid #4E5166;
   border-radius: 20px;
+  font-family: inherit;
 }
 .button{
   display: flex;
@@ -24,7 +36,9 @@ input{
     width: 185px;
     height: 67px;
     color: #FFFFFF;
-    font: 24px bold;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
     background-color: #FD2D01;
     border: 3px solid #FD2D01;
     border-radius: 37px;

@@ -56,8 +56,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.css"
+              "./styles.scss"
             ],
             "scripts": []
           },
@@ -125,8 +124,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
+              "Frontend/styles.scss"
             ],
             "scripts": []
           }
