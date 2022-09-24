@@ -7,10 +7,10 @@
     <div class="poste-list-item" *ngFor="let poste of postes" (click)="onClickPoste(poste._id)">
       <div class="poste-list-head">
         <h4>{{ poste.titre | uppercase }}</h4>
-        <h5>{{poste.userName}}</h5>
+        <h5 class="name">{{poste.userName}}</h5>
       </div>
-      <div class="poste-list-body">
-        <img alt="" [src]="poste.imageUrl">
+      <div class="preview">
+        <img class="preview-img" alt="image du poste" [src]="poste.imageUrl">
       </div>
     </div>
   </div>

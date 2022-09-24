@@ -3,25 +3,26 @@
     <ul>
       <li>
         <a routerLink="postes" routerLinkActive="active" *ngIf="isAuth$ | async">
-          Acceuil
+          <i class="fas fa-house"></i>
         </a>
       </li>
       <li>
-        <a routerLink="new-poste" routerLinkActive="active" *ngIf="isAuth$ | async">
-          Nouveau post
+        <a class="Button" routerLink="new-poste" routerLinkActive="active" *ngIf="isAuth$ | async">
+          CREER UN POST
         </a>
       </li>
     </ul>
   </div>
   <div class="logo">
-    <div class="logo-image">
-      <img alt="Groupomania Logo" src="../../assets/images/icon-groupo.png">
+    <div>
+      <img class="logo-image" alt="Groupomania Logo" src="../../assets/images/icon-groupo.png">
     </div>
   </div>
-  <div>
-    <a (click)="onLogout()" *ngIf="isAuth$ | async">
-      Déconnexion
-   </a>
+  <div class="right-nav">
+    <ul>
+      <li>
+        <a class="Button Button-deco" (click)="onLogout()" *ngIf="isAuth$ | async">Déconnexion</a>
+      </li>
+    </ul>
   </div>
-  
 </nav>

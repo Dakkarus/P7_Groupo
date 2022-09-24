@@ -1,17 +1,18 @@
 <mat-spinner *ngIf="loading"></mat-spinner>
-<form [formGroup]="posteForm" *ngIf="!loading">
-  <div class="form-group">
-    <label for="titre">Titre</label>
-    <input type="text" class="form-control" id="titre" formControlName="titre">
+<form class="body" [formGroup]="posteForm" *ngIf="!loading">
+  <h1 class="body-titre">Créer un post</h1>
+  <div class="form">
+    <label class="form-titre" for="titre">Titre</label>
+    <input type="text" class="form-input titre" id="titre" formControlName="titre">
   </div>
-  <div class="form-group">
-    <label for="contenu">Contenu</label>
-    <textarea class="form-control" id="contenu" rows="5" formControlName="contenu"></textarea>
+  <div class="form">
+    <label class="form-titre" for="contenu">Contenue</label>
+    <textarea class="form-input contenue" id="contenu" rows="5" formControlName="contenu"></textarea>
   </div>
-  <div class="form-group">
+  <div class="form">
     <input type="file" accept="image/*" #imageInput (change)="onFileAdded($event)">
-    <button mat-raised-button color="primary" (click)="imageInput.click()">ADD IMAGE</button>
-    <img [src]="imagePreview" *ngIf="imagePreview" style="max-height: 100px;display:block;margin-top:10px">
+    <button class="button image" (click)="imageInput.click()">Ajouter une image</button>
+    <img [src]="imagePreview" *ngIf="imagePreview">
   </div>
-  <button mat-raised-button color="primary" (click)="onSubmit()" >SUBMIT</button>
+  <button class="button valider" (click)="onSubmit()" >Valider</button>
 </form>
