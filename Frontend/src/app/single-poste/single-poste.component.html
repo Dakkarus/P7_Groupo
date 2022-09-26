@@ -3,8 +3,8 @@
   <img [src]="poste?.imageUrl" alt="">
   <div class="poste-info">
     <h1 class="poste-titre">{{ poste.titre }}</h1>
-    <h3>{{poste.userName}}</h3>
-    <p>{{ poste.contenu }}</p>
+    <h3 class="poste-user">{{poste.userName}}</h3>
+    <p class="poste-content">{{ poste.contenu }}</p>
     <div class="like-buttons" *ngIf="!likePending">
       <div class="likes">
         <i [ngClass]="{ 'fas liked': liked, 'far': !liked, 'disabled': disliked }" class="like fa-thumbs-up fa-lg" (click)="onLike()"></i>
