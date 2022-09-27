@@ -12,8 +12,11 @@ nav {
   height: 124px;
   width: 100%;
 }
-ul {
-  list-style: none;
+
+.left-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo{
   display: flex;
@@ -40,6 +43,10 @@ text-decoration: none;
 color:#Fd2D01;
 font-size: 20px;
 &-deco{
+  margin-right: 40px;
+}
+&-acceuil{
+  margin-left: 40px;
   margin-right: 40px;
 }
 }

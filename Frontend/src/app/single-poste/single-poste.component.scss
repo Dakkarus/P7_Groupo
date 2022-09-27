@@ -18,7 +18,18 @@
   padding: 40px 20px;
   flex: 1;
 }
-
+.poste-head{
+  margin-left: 72px;
+  margin-top: 68px;
+}
+.poste-titre{
+  color: #fd2d01;
+  font-family: "Lato";
+  font-weight: bold;
+}
+.poste-user{
+  margin-top: -20px;
+}
 .poste-content{
   width: 529px;
   height: 494px;
@@ -26,10 +37,12 @@
   text-align: left;
   margin-left: 69px;
   margin-right: 69px;
+  overflow: scroll;
 }
 
 .like-buttons {
   display: flex;
+  justify-content: center;
   i {
     margin-right: 0.5em;
     cursor: pointer;
@@ -70,7 +83,17 @@
 }
 
 .control-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
   button {
     margin: 1em 1em 0 0;
   }
+}
+.buttons{
+  border-radius: 37px;
+  border: 3px solid #Fd2D01;
+  height: 52px;
+  width: 170px;
+  color:#Fd2D01;
 }

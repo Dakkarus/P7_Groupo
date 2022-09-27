@@ -2,8 +2,10 @@
 <div class="poste-container" *ngIf="poste$ | async as poste">
   <img [src]="poste?.imageUrl" alt="">
   <div class="poste-info">
-    <h1 class="poste-titre">{{ poste.titre }}</h1>
-    <h3 class="poste-user">{{poste.userName}}</h3>
+    <div class="poste-head">
+      <h1 class="poste-titre">{{ poste.titre }}</h1>
+      <h3 class="poste-user">{{poste.userName}}</h3>
+    </div>
     <p class="poste-content">{{ poste.contenu }}</p>
     <div class="like-buttons" *ngIf="!likePending">
       <div class="likes">
@@ -19,9 +21,8 @@
       <mat-spinner class="white-spinner"></mat-spinner>
     </div>
     <div class="control-buttons">
-      <button mat-raised-button (click)="onBack()">Retour</button>
-      <button mat-raised-button color="primary" (click)="onModify()" >Modifier</button>
-      <button mat-raised-button color="warn" (click)="onDelete()" >Supprimer</button>
+      <button class="buttons" (click)="onModify()" >Modifier</button>
+      <button class="buttons" (click)="onDelete()" >Supprimer</button>
     </div>
   </div>
 </div>
